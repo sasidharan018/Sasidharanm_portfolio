@@ -4,15 +4,16 @@ body {
     padding: 0;
     line-height: 1.6;
     color: #333;
-    background-color: #f8f9fa;
+    background: linear-gradient(135deg, #e3f2fd 0%, #f5f5f5 100%);
+    min-height: 100vh;
 }
 
 header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1976d2 0%, #42a5f5 100%);
     color: white;
     padding: 2em 0;
     text-align: center;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 20px rgba(25, 118, 210, 0.3);
 }
 
 header h1 {
@@ -53,35 +54,11 @@ nav a:hover {
 section {
     padding: 3em 2em;
     max-width: 1000px;
-    margin: 0 auto;
-}
-
-#about {
-    background-color: #fff;
-    border-radius: 10px;
-    margin: 2em;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-}
-
-#skills {
-    background-color: #fff;
-    border-radius: 10px;
-    margin: 2em;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-}
-
-#projects {
-    background-color: #fff;
-    border-radius: 10px;
-    margin: 2em;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-}
-
-#contact {
-    background-color: #fff;
-    border-radius: 10px;
-    margin: 2em;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    margin: 2em auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    border: 1px solid #e0e0e0;
 }
 
 .skills-container {
@@ -92,38 +69,56 @@ section {
 }
 
 .skill {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1976d2 0%, #42a5f5 100%);
     color: white;
     padding: 0.5em 1em;
     border-radius: 25px;
     font-size: 0.9em;
     font-weight: 500;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(25, 118, 210, 0.3);
+    transition: all 0.3s ease;
 }
 
 .skill:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(25, 118, 210, 0.4);
 }
 
 .project {
     margin-bottom: 2em;
     padding: 1.5em;
-    border: 1px solid #e9ecef;
-    border-radius: 8px;
-    background-color: #f8f9fa;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #e3f2fd;
+    border-radius: 10px;
+    background-color: #fafafa;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.project::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(135deg, #1976d2 0%, #42a5f5 100%);
+    transition: width 0.3s ease;
 }
 
 .project:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+    border-color: #42a5f5;
+}
+
+.project:hover::before {
+    width: 6px;
 }
 
 .project h3 {
     margin-top: 0;
-    color: #495057;
+    color: #1976d2;
 }
 
 form {
@@ -136,38 +131,54 @@ form {
 input, textarea {
     margin-bottom: 1em;
     padding: 0.75em;
-    border: 2px solid #e9ecef;
-    border-radius: 5px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
     font-size: 1em;
-    transition: border-color 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
 }
 
 input:focus, textarea:focus {
     outline: none;
-    border-color: #667eea;
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    border-color: #42a5f5;
+    box-shadow: 0 0 0 3px rgba(66, 165, 245, 0.1);
+    background-color: #ffffff;
 }
 
 button {
     padding: 0.75em;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1976d2 0%, #42a5f5 100%);
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 1em;
     font-weight: 500;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(25, 118, 210, 0.3);
 }
 
 button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 6px 25px rgba(25, 118, 210, 0.4);
 }
 
 h2 {
     text-align: center;
-    color: #495057;
+    color: #424242;
     margin-bottom: 1.5em;
     font-weight: 300;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(135deg, #1976d2 0%, #42a5f5 100%);
+    border-radius: 2px;
 }
