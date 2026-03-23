@@ -3,69 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sasidharan M - SDET Engineer Portfolio</title>
+    <title>Sasidharan M - SDET Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Sasidharan M</h1>
-        <p>SDET Engineer at Cognizant</p>
-        <nav>
-            <ul>
+    <nav class="fixed-nav">
+        <div class="nav-container">
+           
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-    </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I'm Sasidharan M, an SDET Engineer at Cognizant with 3.7 years of experience. I'm EJPT certified and passionate about ensuring software quality through automation, functional, and security testing. I specialize in creating robust test frameworks and identifying vulnerabilities to deliver secure, high-quality applications.</p>
-    </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill">Java</div>
-            <div class="skill">JavaScript/TypeScript</div>
-            <div class="skill">Playwright</div>
-            <div class="skill">Selenium</div>
-            <div class="skill">MySQL</div>
-            <div class="skill">MongoDB</div>
-            <div class="skill">Postman</div>
-            <div class="skill">Mainframe Testing</div>
-            <div class="skill">BurpSuite</div>
-            <div class="skill">OWASP ZAP</div>
-            <div class="skill">Automation Testing</div>
-            <div class="skill">Functional Testing</div>
-            <div class="skill">Security Testing</div>
+            <a href="Sasidharan M - SDET.pdf" download class="resume-btn">Resume</a>
+        </div>
+    </nav>
+
+    <section id="home" class="full-section">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="sasi-new.jpg" alt="Sasidharan M" class="profile-hero">
+            </div>
+            <div class="hero-text">
+                <h1>Sasidharan M</h1>
+                <p class="hero-subtitle">Software Development Engineer in Test (SDET)</p>
+
+            </div>
         </div>
     </section>
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project">
-            <h3>Automated Test Framework</h3>
-            <p>Developed a comprehensive automation testing framework using Selenium and Java, reducing manual testing time by 60% and improving test coverage.</p>
-        </div>
-        <div class="project">
-            <h3>Security Testing Suite</h3>
-            <p>Implemented security testing procedures using BurpSuite and OWASP ZAP, identifying and mitigating potential vulnerabilities in web applications.</p>
-        </div>
-        <div class="project">
-            <h3>API Testing with Playwright</h3>
-            <p>Created end-to-end API testing scripts using Playwright and Postman, ensuring reliable backend functionality and data integrity.</p>
+
+    <section id="about" class="full-section">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>Hi, I'm Sasidharan M, an SDET Engineer at Cognizant with 3.7 years of experience. I'm EJPT certified and passionate about ensuring software quality through automation, functional, and security testing. I specialize in creating robust test frameworks and identifying vulnerabilities to deliver secure, high-quality applications.</p>
+            </div>
         </div>
     </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>You can reach me at: <strong>sasidharanm.official@gmail.com</strong></p>
-        <form id="contact-form">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+
+    <section id="skills" class="full-section">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <button class="skill-btn"><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="Java"> Java</button>
+                <button class="skill-btn"><img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript"> JavaScript/TypeScript</button>
+                <button class="skill-btn"><img src="https://raw.githubusercontent.com/microsoft/playwright/main/packages/web/src/assets/playwright-logo.svg" alt="Playwright"> Playwright</button>
+                <button class="skill-btn"><img src="https://img.icons8.com/color/48/selenium-test-automation.png" alt="Selenium"> Selenium</button>
+                <button class="skill-btn"><img src="https://img.icons8.com/fluency/48/000000/mysql-logo.png" alt="MySQL"> MySQL</button>
+                <button class="skill-btn"><img src="https://img.icons8.com/color/48/000000/mongodb.png" alt="MongoDB"> MongoDB</button>
+                <button class="skill-btn"><img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png" alt="Postman"> Postman</button>
+                <button class="skill-btn"><img src="https://www.kindpng.com/picc/m/88-883611_mainframe-monitor-hd-png-download.png" alt="Mainframe Monitor, HD Png Download@kindpng.com"> Mainframe Testing</button>
+                <button class="skill-btn"><img img src="https://www.kindpng.com/picc/m/206-2064380_burp-suite-icon-png-transparent-png.png" alt="Burp Suite Icon Png, Transparent Png@kindpng.com"> BurpSuite</button>
+                <button class="skill-btn"><img src="https://a.fsdn.com/allura/s/owasp-zed-attack-proxy-zap/icon?1715619139?&w=135" alt="OWASP ZAP"> OWASP ZAP</button>
+                <button class="skill-btn"><img src="https://www.kindpng.com/picc/m/11-110595_qa-icon-software-quality-assurance-icon-hd-png.png" alt="Qa Icon - Software Quality Assurance Icon, HD Png Download@kindpng.com"> Automation Testing</button>
+                <button class="skill-btn"><img src="https://img.icons8.com/color/48/000000/checklist.png" alt="Functional"> Functional Testing</button>
+                <button class="skill-btn"><img src="https://img.icons8.com/color/48/000000/security-checked.png" alt="Security"> Security Testing</button>
+            </div>
+        </div>
     </section>
+
+    <section id="projects" class="full-section">
+        <div class="section-content">
+            <h2>My Projects</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <h3>Automated Test Framework</h3>
+                    <p>Developed a comprehensive automation testing framework using Selenium and Java, reducing manual testing time by 60% and improving test coverage.</p>
+                </div>
+                <div class="project">
+                    <h3>Security Testing Suite</h3>
+                    <p>Implemented security testing procedures using BurpSuite and OWASP ZAP, identifying and mitigating potential vulnerabilities in web applications.</p>
+                </div>
+                <div class="project">
+                    <h3>API Testing with Playwright</h3>
+                    <p>Created end-to-end API testing scripts using Playwright and Postman, ensuring reliable backend functionality and data integrity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="full-section">
+        <div class="section-content">
+            <h2>Certifications</h2>
+            <div class="certifications-container">
+                <div class="certification">
+                    <a href="https://certs.ine.com/8aa34403-88a9-4d75-b6a3-c668166561ad#acc.8p6islWL" target="_blank">
+                        <img src="https://templates.images.credential.net/16947192901898719699151540862834.png" alt="eJPT v2 Badge" width="100">
+                        <p>eJPT v2</p>
+                    </a>
+                </div>
+                <div class="certification">
+                    <a href="https://www.credly.com/badges/ba9b7555-8e05-4132-b950-c36c731f621a/linked_in?t=t5z59x" target="_blank">
+                        <img src="https://images.credly.com/images/83ece56a-e88e-44a4-8939-ebdbf83ef18a/blob" alt="Vibe Code Hackathon Badge" width="100">
+                        <p>Vibecoding Hackathon Participation</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="full-section">
+        <div class="section-content">
+            <h2>Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-links">
+                    <a href="mailto:sasidharanm.official@gmail.com" class="contact-link">
+                        <img src="https://img.icons8.com/color/48/000000/gmail.png" alt="Email"> Email
+                    </a>
+                    <a href="https://www.linkedin.com/in/sasidharan-m-b3119b232/" target="_blank" class="contact-link">
+                        <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn"> LinkedIn
+                    </a>
+                    <a href="https://github.com/sasidharan018/" target="_blank" class="contact-link">
+                        <img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub"> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>
